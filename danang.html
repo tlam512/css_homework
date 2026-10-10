@@ -9,84 +9,113 @@
 </head>
 
 <body>
-
-    <a class="skip-link" href="#main-content">Chuyển đến Nội dung chính</a>
+    <a class="skip-link" href="#main-content">
+        Chuyển đến Nội dung chính
+    </a>
 
     <header>
         <h1>Đà Nẵng</h1>
         <p>Thành phố biển năng động của miền Trung Việt Nam.</p>
     </header>
 
-    <nav>
+    <nav aria-label="Điều hướng chính">
         <a href="index.html">Trang chủ</a>
         <a href="hanoi.html">Hà Nội</a>
-        <a href="danang.html">Đà Nẵng</a>
+        <a href="danang.html" aria-current="page">Đà Nẵng</a>
     </nav>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
+        <p class="lead">
+            Khám phá năm điểm tham quan nổi bật của Đà Nẵng.
+        </p>
 
-        <div class="flex">
-            <section>
-                <h2>Bãi biển Mỹ Khê</h2>
-
-                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/My_Khe_Beach%2C_Da_Nang%2C_Vietnam.jpg?width=1200"
-                    alt="Bãi biển Mỹ Khê tại Đà Nẵng" width="400" height="250">
-
+        <div class="grid">
+            <section class="place-card">
+                <h2>1. Bãi biển Mỹ Khê</h2>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/My_Khe_Beach_seen_from_the_Son_Tra_Mountain.jpg?width=960"
+                    alt="Bãi biển Mỹ Khê nhìn từ bán đảo Sơn Trà" width="480" height="300" loading="lazy">
                 <p>
-                    Mỹ Khê là một trong những bãi biển nổi tiếng của Đà Nẵng,
-                    thu hút du khách bởi bờ cát dài và cảnh quan đẹp.
+                    Bãi biển Mỹ Khê nổi tiếng với bờ cát
+                    dài, nước biển đẹp và nhiều hoạt động
+                    vui chơi, giải trí trên biển.
                 </p>
-
                 <ul>
-                    <li>Bãi biển đẹp</li>
-                    <li>Các hoạt động trên biển</li>
+                    <li>Tắm biển</li>
                     <li>Ngắm bình minh</li>
+                    <li>Các hoạt động thể thao trên biển</li>
                 </ul>
             </section>
 
-            <section>
-                <h2>Bà Nà Hills</h2>
-
-                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Bridge_at_Ba_Na_Hills_20250718.jpg?width=1200"
-                    alt="Cầu Vàng và cảnh quan Bà Nà Hills tại Đà Nẵng" width="400" height="250">
-
+            <section class="place-card">
+                <h2>2. Bà Nà Hills - Cầu Vàng</h2>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Da_Nang_Golden_Bridge%2C_Sun_World_Ba_Na_Hills.jpg?width=960"
+                    alt="Cầu Vàng tại Bà Nà Hills ở Đà Nẵng" width="480" height="300" loading="lazy">
                 <p>
-                    Bà Nà Hills là khu du lịch nổi tiếng nằm trên núi,
-                    có khí hậu mát mẻ và nhiều công trình tham quan.
+                    Bà Nà Hills là khu du lịch nổi tiếng
+                    trên núi. Cầu Vàng gây ấn tượng với
+                    thiết kế hai bàn tay khổng lồ nâng cầu.
                 </p>
-
                 <ul>
                     <li>Cầu Vàng</li>
                     <li>Làng Pháp</li>
-                    <li>Cáp treo Bà Nà</li>
+                    <li>Hệ thống cáp treo</li>
                 </ul>
             </section>
 
-            <section>
-                <h2>Ngũ Hành Sơn</h2>
-
-                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marble_Mountains%2C_Vietnam.jpg?width=1200"
-                    alt="Cảnh núi đá Ngũ Hành Sơn tại Đà Nẵng" width="400" height="250">
-
+            <section class="place-card">
+                <h2>3. Ngũ Hành Sơn</h2>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marble_Mountains%2C_Vietnam.jpg?width=960"
+                    alt="Quần thể núi đá Ngũ Hành Sơn tại Đà Nẵng" width="480" height="300" loading="lazy">
                 <p>
-                    Ngũ Hành Sơn là quần thể núi đá nổi tiếng với các hang động,
-                    chùa chiền và cảnh quan thiên nhiên đặc sắc.
+                    Ngũ Hành Sơn là quần thể núi đá
+                    với nhiều hang động, chùa chiền
+                    và công trình tâm linh nổi tiếng.
                 </p>
-
                 <ul>
                     <li>Thủy Sơn</li>
                     <li>Động Huyền Không</li>
-                    <li>Chùa Linh Ứng</li>
+                    <li>Chùa Tam Thai</li>
+                </ul>
+            </section>
+
+            <section class="place-card">
+                <h2>4. Cầu Rồng</h2>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Remote_view_of_the_Dragon_Bridge_in_Da_Nang.jpg?width=960"
+                    alt="Cầu Rồng bắc qua sông Hàn tại Đà Nẵng" width="480" height="300" loading="lazy">
+                <p>
+                    Cầu Rồng là một trong những biểu tượng
+                    kiến trúc hiện đại của Đà Nẵng,
+                    nổi bật với thiết kế hình con rồng
+                    bắc qua sông Hàn.
+                </p>
+                <ul>
+                    <li>Kiến trúc hình rồng</li>
+                    <li>Ngắm cảnh sông Hàn</li>
+                    <li>Trình diễn phun lửa, phun nước</li>
+                </ul>
+            </section>
+
+            <section class="place-card">
+                <h2>5. Chùa Linh Ứng - Sơn Trà</h2>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lady_Buddha_Da_Nang.jpg?width=960"
+                    alt="Tượng Phật Bà Quan Âm tại chùa Linh Ứng Sơn Trà" width="480" height="300" loading="lazy">
+                <p>
+                    Chùa Linh Ứng nằm trên bán đảo Sơn Trà,
+                    nổi bật với tượng Phật Bà Quan Âm
+                    và khung cảnh hướng ra biển.
+                </p>
+                <ul>
+                    <li>Tượng Phật Bà Quan Âm</li>
+                    <li>Kiến trúc Phật giáo</li>
+                    <li>Cảnh quan bán đảo Sơn Trà</li>
                 </ul>
             </section>
         </div>
-
     </main>
 
     <footer>
         <p>&copy; 2026 - Khám Phá Du Lịch Việt Nam</p>
     </footer>
-
 </body>
 
 </html>

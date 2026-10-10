@@ -9,80 +9,70 @@
 </head>
 
 <body>
-
-    <a class="skip-link" href="#main-content">Chuyển đến Nội dung chính</a>
+    <a class="skip-link" href="#main-content">
+        Chuyển đến Nội dung chính
+    </a>
 
     <header>
         <h1>Khám Phá Du Lịch Việt Nam</h1>
-        <p>Những địa điểm tuyệt đẹp mà bạn nên ghé thăm.</p>
+        <p>Những điểm đến đặc sắc từ Bắc vào Trung.</p>
     </header>
 
-    <nav>
-        <a href="index.html">Trang chủ</a>
+    <nav aria-label="Điều hướng chính">
+        <a href="index.html" aria-current="page">Trang chủ</a>
         <a href="hanoi.html">Hà Nội</a>
         <a href="danang.html">Đà Nẵng</a>
     </nav>
 
-    <main id="main-content">
-
-        <section>
-            <h2>Hà Nội</h2>
-
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hoan_Kiem_Lake_photo.jpg?width=1200"
-                alt="Hồ Hoàn Kiếm và Tháp Rùa tại Hà Nội" width="400" height="250">
-
+    <main id="main-content" tabindex="-1">
+        <section class="intro">
+            <h2>Hai thành phố đáng khám phá</h2>
             <p>
-                Hà Nội là thủ đô của Việt Nam, nổi tiếng với những công trình
-                lịch sử, phố cổ và nền ẩm thực đặc sắc.
+                Hành trình từ thủ đô nghìn năm văn hiến đến
+                thành phố biển miền Trung. Chọn một điểm đến
+                để xem năm địa danh nổi bật.
             </p>
-
-            <ul>
-                <li>Hồ Hoàn Kiếm</li>
-                <li>Phố cổ Hà Nội</li>
-                <li>Văn Miếu - Quốc Tử Giám</li>
-            </ul>
         </section>
 
-        <section>
-            <h2>Đà Nẵng</h2>
+        <div class="home-grid">
+            <article class="place-card">
+                <h2>Hà Nội</h2>
 
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/My_Khe_Beach%2C_Da_Nang%2C_Vietnam.jpg?width=1200"
-                alt="Bãi biển Mỹ Khê tại Đà Nẵng" width="400" height="250">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hoan_Kiem_Lake_photo.jpg?width=960"
+                    alt="Hồ Hoàn Kiếm tại Hà Nội" width="520" height="320">
 
-            <p>
-                Đà Nẵng là thành phố biển nổi tiếng với những bãi biển đẹp,
-                cảnh quan thiên nhiên và nhiều điểm tham quan hấp dẫn.
-            </p>
+                <p>
+                    Khám phá Hồ Hoàn Kiếm, Văn Miếu,
+                    chùa Trấn Quốc, Lăng Chủ tịch Hồ Chí Minh
+                    và cầu Long Biên.
+                </p>
 
-            <ul>
-                <li>Bãi biển Mỹ Khê</li>
-                <li>Bà Nà Hills</li>
-                <li>Ngũ Hành Sơn</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Địa Điểm Tôi Muốn Đến</h2>
-
-            <p>
-                Trong tương lai, tôi muốn khám phá nhiều địa điểm khác
-                trên khắp Việt Nam.
-            </p>
-
-            <p>
-                Tìm hiểu thêm về du lịch Việt Nam tại:
-                <a href="https://vietnam.travel/" target="_blank" rel="noopener noreferrer">
-                    Vietnam Tourism
+                <a class="explore" href="hanoi.html">
+                    Xem 5 địa điểm Hà Nội →
                 </a>
-            </p>
-        </section>
+            </article>
 
+            <article class="place-card">
+                <h2>Đà Nẵng</h2>
+
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/My_Khe_Beach_seen_from_the_Son_Tra_Mountain.jpg?width=960"
+                    alt="Bãi biển Mỹ Khê nhìn từ Sơn Trà" width="520" height="320">
+
+                <p>
+                    Tham quan biển Mỹ Khê, Bà Nà Hills,
+                    Ngũ Hành Sơn, cầu Rồng và chùa Linh Ứng.
+                </p>
+
+                <a class="explore" href="danang.html">
+                    Xem 5 địa điểm Đà Nẵng →
+                </a>
+            </article>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2026 - Khám Phá Du Lịch Việt Nam</p>
     </footer>
-
 </body>
 
 </html>

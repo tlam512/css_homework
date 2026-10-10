@@ -9,34 +9,37 @@
 </head>
 
 <body>
-
-    <a class="skip-link" href="#main-content">Chuyển đến Nội dung chính</a>
+    <a class="skip-link" href="#main-content">
+        Chuyển đến Nội dung chính
+    </a>
 
     <header>
         <h1>Hà Nội</h1>
         <p>Khám phá thủ đô nghìn năm văn hiến.</p>
     </header>
 
-    <nav>
+    <nav aria-label="Điều hướng chính">
         <a href="index.html">Trang chủ</a>
-        <a href="hanoi.html">Hà Nội</a>
+        <a href="hanoi.html" aria-current="page">Hà Nội</a>
         <a href="danang.html">Đà Nẵng</a>
     </nav>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
+        <p class="lead">
+            Năm địa điểm du lịch nổi bật của thủ đô Hà Nội.
+        </p>
 
         <div class="grid">
-            <section>
-                <h2>Hồ Hoàn Kiếm</h2>
-
-                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hoan_Kiem_Lake_photo.jpg?width=1200"
-                    alt="Hồ Hoàn Kiếm và Tháp Rùa tại Hà Nội" width="400" height="250">
-
+            <section class="place-card">
+                <h2>1. Hồ Hoàn Kiếm</h2>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hoan_Kiem_Lake_photo.jpg?width=960"
+                    alt="Hồ Hoàn Kiếm ở trung tâm Hà Nội" width="480" height="300" loading="lazy">
                 <p>
-                    Hồ Hoàn Kiếm nằm ở trung tâm Hà Nội và là một trong những
-                    địa danh nổi tiếng nhất của thủ đô.
+                    Hồ Hoàn Kiếm nằm ở trung tâm thủ đô,
+                    gắn liền với truyền thuyết trả gươm.
+                    Đây là địa điểm tham quan nổi tiếng,
+                    gần Tháp Rùa và đền Ngọc Sơn.
                 </p>
-
                 <ul>
                     <li>Tháp Rùa</li>
                     <li>Đền Ngọc Sơn</li>
@@ -44,50 +47,77 @@
                 </ul>
             </section>
 
-            <section>
-                <h2>Phố cổ Hà Nội</h2>
-
-                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Old_Quarter_Hanoi_Street_View.JPG?width=1200"
-                    alt="Phố cổ Hà Nội với các ngôi nhà và đường phố" width="400" height="250">
-
+            <section class="place-card">
+                <h2>2. Văn Miếu - Quốc Tử Giám</h2>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hanoi_-_Temple_of_Literature.jpg?width=960"
+                    alt="Khuê Văn Các tại Văn Miếu Quốc Tử Giám" width="480" height="300" loading="lazy">
                 <p>
-                    Phố cổ Hà Nội nổi tiếng với những con phố lâu đời,
-                    các cửa hàng truyền thống và nền ẩm thực phong phú.
+                    Văn Miếu - Quốc Tử Giám là di tích lịch sử
+                    và văn hóa quan trọng, biểu tượng cho
+                    truyền thống hiếu học của Việt Nam.
                 </p>
-
-                <ul>
-                    <li>Phố Hàng Mã</li>
-                    <li>Phố Hàng Bạc</li>
-                    <li>Chợ Đồng Xuân</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Văn Miếu - Quốc Tử Giám</h2>
-
-                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hanoi_-_Temple_of_Literature.jpg?width=1200"
-                    alt="Văn Miếu - Quốc Tử Giám tại Hà Nội" width="400" height="250">
-
-                <p>
-                    Văn Miếu - Quốc Tử Giám là một di tích lịch sử và văn hóa
-                    quan trọng của Hà Nội, gắn liền với truyền thống giáo dục
-                    của Việt Nam.
-                </p>
-
                 <ul>
                     <li>Khuê Văn Các</li>
                     <li>Nhà bia tiến sĩ</li>
                     <li>Đại Thành Môn</li>
                 </ul>
             </section>
-        </div>
 
+            <section class="place-card">
+                <h2>3. Chùa Trấn Quốc</h2>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tran_Quoc_Pagoda%2C_Hanoi%2C_Vietnam.jpg?width=960"
+                    alt="Chùa Trấn Quốc bên Hồ Tây Hà Nội" width="480" height="300" loading="lazy">
+                <p>
+                    Chùa Trấn Quốc nằm bên Hồ Tây, là một
+                    trong những ngôi chùa lâu đời ở Hà Nội.
+                    Nơi đây nổi bật với kiến trúc Phật giáo
+                    và không gian thanh bình.
+                </p>
+                <ul>
+                    <li>Bảo tháp</li>
+                    <li>Kiến trúc Phật giáo</li>
+                    <li>Cảnh quan Hồ Tây</li>
+                </ul>
+            </section>
+
+            <section class="place-card">
+                <h2>4. Lăng Chủ tịch Hồ Chí Minh</h2>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_Mausoleum_in_Hanoi.jpg?width=960"
+                    alt="Lăng Chủ tịch Hồ Chí Minh ở Ba Đình" width="480" height="300" loading="lazy">
+                <p>
+                    Lăng Chủ tịch Hồ Chí Minh nằm tại
+                    Quảng trường Ba Đình, là công trình
+                    lịch sử quan trọng của Việt Nam.
+                </p>
+                <ul>
+                    <li>Quảng trường Ba Đình</li>
+                    <li>Khu di tích Chủ tịch Hồ Chí Minh</li>
+                    <li>Chùa Một Cột gần đó</li>
+                </ul>
+            </section>
+
+            <section class="place-card">
+                <h2>5. Cầu Long Biên</h2>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Long_Bien_bridge.jpg?width=960"
+                    alt="Cầu Long Biên bắc qua sông Hồng ở Hà Nội" width="480" height="300" loading="lazy">
+                <p>
+                    Cầu Long Biên là cây cầu lịch sử
+                    bắc qua sông Hồng, mang dấu ấn kiến trúc
+                    và gắn liền với lịch sử phát triển
+                    của thủ đô Hà Nội.
+                </p>
+                <ul>
+                    <li>Kiến trúc cầu thép</li>
+                    <li>Khung cảnh sông Hồng</li>
+                    <li>Giá trị lịch sử</li>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2026 - Khám Phá Du Lịch Việt Nam</p>
     </footer>
-
 </body>
 
 </html>
